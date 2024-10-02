@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1 (Python 3.12.0 on win32)" generated="2024-10-02T19:04:09.410562" rpa="false" schemaversion="5">
+<suite id="s1" name="Pit-Testavimas-Python" source="C:\Users\Marius\PycharmProjects\pit-testavimas-python">
+<suite id="s1-s1" name="Robot Framework" source="C:\Users\Marius\PycharmProjects\pit-testavimas-python\robot_framework">
+<suite id="s1-s1-s1" name="Hello" source="C:\Users\Marius\PycharmProjects\pit-testavimas-python\robot_framework\hello.robot">
+<test id="s1-s1-s1-t1" name="Open Google" line="4">
+<kw name="Navigate To Google">
+<kw name="Open Browser" owner="Selenium2Library">
+<msg time="2024-10-02T19:04:09.776942" level="INFO">Opening browser 'chrome' to base url 'https://www.google.fi'.</msg>
+<arg>https://www.google.fi</arg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-10-02T19:04:09.775941" elapsed="4.893542"/>
+</kw>
+<status status="PASS" start="2024-10-02T19:04:09.775941" elapsed="4.893542"/>
+</kw>
+<kw name="Verify Page Contains Google">
+<kw name="Get Title" owner="Selenium2Library">
+<msg time="2024-10-02T19:04:14.674482" level="INFO">${Get_title} = Google</msg>
+<var>${Get_title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-10-02T19:04:14.669483" elapsed="0.004999"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${Get_title}</arg>
+<arg>Google</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-10-02T19:04:14.674482" elapsed="0.001011"/>
+</kw>
+<kw name="Close Browser" owner="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-10-02T19:04:14.675493" elapsed="2.111415"/>
+</kw>
+<status status="PASS" start="2024-10-02T19:04:14.669483" elapsed="2.117425"/>
+</kw>
+<status status="PASS" start="2024-10-02T19:04:09.774943" elapsed="7.012959"/>
+</test>
+<status status="PASS" start="2024-10-02T19:04:09.428572" elapsed="7.360328"/>
+</suite>
+<status status="PASS" start="2024-10-02T19:04:09.426563" elapsed="7.363347"/>
+</suite>
+<status status="PASS" start="2024-10-02T19:04:09.411564" elapsed="7.378346"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Pit-Testavimas-Python">Pit-Testavimas-Python</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot Framework">Pit-Testavimas-Python.Robot Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Hello">Pit-Testavimas-Python.Robot Framework.Hello</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
